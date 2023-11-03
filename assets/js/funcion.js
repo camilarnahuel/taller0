@@ -94,16 +94,16 @@ let juego = ()=>{
         let lanzamiento = lanzarmoneda();
 
         if (e == 1 && lanzamiento == 1){
-            let pl = g(pl,a)
+            pl = g(pl,a)
             console.log(`¡Ganaste! Su saldo actual es ${pl}`);
         }else if(e == 2 && lanzamiento == 2){
-            let pl = g(pl,a)
+            pl = g(pl,a)
             console.log(`¡Ganaste! Su saldo actual es ${pl}`);
         }else{
-            let pl = p(pl,a)
+            pl = p(pl,a)
             console.log(`¡Perdiste! Su saldo actual es ${pl}`);
         }
-        let i = parseInt(prompt('¿Quieres seguir jugando? 1 si, 0 no: '));
+        i = parseInt(prompt('¿Quieres seguir jugando? 1 si, 0 no: '));
     
     }
     console.log(`Tu saldo final es ${pl}`);
